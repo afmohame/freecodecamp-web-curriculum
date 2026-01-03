@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us 
+    improve the platform </p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input required name="name" id="name" type="text" 
+        placeholder="Enter your name"><br>
+    
+        <label id="email-label" for="email">Email</label>
+        <input required name="email" id="email" type="email" 
+        placeholder="Enter your email"><br>
+    
+        <label id="number-label" for="number">Age(optional)</label>
+        <input name="age" id="number" type="number" min="10" 
+        max="100" placeholder="Age">
+
+    <p>Which option best describes your current role?</p>
+
+        <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select><br>
+
+        <p>Would you recommend freeCodeCamp?</p>
+        <label>
+            <input id="radio1" type="radio" value="yes" name="radio">
+        Hoe ass nigga</label>
+        <label>
+            <input id="radio2" type="radio" value="no" name="radio">
+        Bitchass nigga</label>
+
+         <p>What is your favorite feature of freeCodeCamp?</p>
+         <label>
+            <input type="checkbox" value="check">
+        House nigga</label>
+         <label>
+            <input type="checkbox" value="check"> 
+        Fuck nigga</label><br>
+
+        <textarea>
+        </textarea><br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 500px;
+}
+
+#card {
+    background: beige;
+    min-width: 500px;
+    min-height: 750px;
+    border-radius: 20px;
+}
+
+#headtitle {
+    text-align: center;
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.todo-list {
+    list-style-type: none;
+}
+ul.todo-list > li:first-child {
+    margin-top: 25px;
+}
+
+.todo_list_items {
+    background-color: rgb(204, 240, 204);
+    margin-right: 40px;
+    padding-top: 10px;  
+    padding-bottom: 70px;
+    padding-left: 15px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.labels {
+    margin-left: 5;
+    color: rgb(61, 58, 58);
+}
+
+.sub-item {
+    margin-top: 15px;
+}
+.list_item{
+    list-style-type: square;
+}
+.sub-item-link {
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+
+/* Link modifications*/
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:link {
+    color: yellowgreen;
+}
+
+a:focus{
+    color:red;
+    outline: dotted;
+}
+
+a:active{
+    color: brown;
+}
