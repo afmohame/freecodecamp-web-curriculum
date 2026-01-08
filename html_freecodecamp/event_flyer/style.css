@@ -1,0 +1,71 @@
+:root{
+    --padding-top-bottom: 50px;
+}
+body {
+    background-color: bisque;
+    /*padding: var(--padding-top-bottom) 0px; 
+    This also works but not for freecodecamp test*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width: 100vw;
+    /*min-height: calc(100vh - 2 * var(--padding-top-bottom));
+    should work also it is the same*/
+    min-height: calc(100vh - 100px);
+}
+
+header {
+    text-align: center;
+}
+
+#img_binche {
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    text-align: center;
+}
+
+.heading_one {
+    text-align: center;
+}
+
+.header_paragraph {
+    text-align: center;
+}
+
+.horizontal_rule {
+    width: 85%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+}
+
+.section {
+    margin: 10px;
+    height: auto;
+    text-align: justify;
+}
+#history {
+    color: blue;
+    max-width: 30%;
+}
+#location {
+    color: green;
+    max-width: 30%;
+}
+#fun {
+    color: red;
+    max-width: 30%;
+}
+
+.heading_two {
+    text-align: center;
+}
+
+.section_paragraph {
+    text-align: justify;
+}
+
