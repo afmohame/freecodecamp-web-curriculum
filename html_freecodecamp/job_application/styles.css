@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: lightgrey;
+    width: 75%;
+    height: auto;
+    font-weight: bold;
+    margin: 250px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    padding: 10px 30px;
+    max-width: 450px;
+}
+.radio-group, .radio-group label { 
+    /*so font is normal the label is added if in the future 
+    you add labels and somewhere you write label bold
+    it won't the labels inside the radio-group*/
+    font-weight: normal;
+}
+
+.head_title {
+    text-align: center;
+}
+
+input, select, #submit {
+    font-size: medium;
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 15px auto;
+}
+textarea{
+    border-radius: 5px;
+}
+
+.input, #position {
+    padding-left: 8px;
+}
+
+/* Styles for input validation */
+fieldset {
+    border-style: none;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid yellow;
+}
+
+input:invalid, textarea:invalid, select:invalid {
+    border: 2px solid red;
+}
+
+input:valid, textarea:valid, select:valid {
+    border: 2px solid green;
+    outline: none;
+}
+
+#submit {
+    background-color: cornflowerblue;
+    color:white;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+#submit:hover {
+    background-color: navy;
+
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color: red;
+    background-color: lightblue;
+    box-shadow: 0 0 5px lightblue;
+}
+
+.radio-group:checked {
+    color: lightblue;
+}
