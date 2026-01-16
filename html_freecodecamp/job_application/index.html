@@ -17,7 +17,7 @@
             <input class="input" id="email" name="email" type="email" required placeholder="Enter your email">
 
             <label for="position">Position:</label>
-            <select id="position">
+            <select id="position" required>
                 <option class="option" value="sel_position" disabled selected>Select Position</option>
                 <option class="option" value="developer">Developer</option>
                 <option class="option" value="designer">Designer</option>
@@ -26,11 +26,11 @@
 
             <label for="radio-group">Availability:</label>
             <fieldset id="radio-group" class="radio-group">
-                <label for="full-time">Full-Time</label>
                 <input id="full-time" name="availability" value="full-time" type="radio">
+                <label for="full-time">Full-Time</label>
 
-                <label for="part-time">Part-Time</label>
                 <input id="part-time" name="availability" value="part-time" type="radio">
+                <label for="part-time">Part-Time</label>
             </fieldset>
 
             <label for="message">Why do you want this job?</label>

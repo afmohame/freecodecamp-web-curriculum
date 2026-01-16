@@ -24,7 +24,7 @@ body {
     text-align: center;
 }
 
-input, select, #submit {
+input:not([type="radio"]), select, #submit {
     font-size: medium;
     display: block;
     border-radius: 5px;
@@ -33,50 +33,69 @@ input, select, #submit {
     margin: 15px auto;
 }
 textarea{
+    display: block;
     border-radius: 5px;
+    min-width: 98%;
+    max-width: 98%;
 }
 
-.input, #position {
+.input:not([type="radio"]), #position {
     padding-left: 8px;
 }
 
 /* Styles for input validation */
+
+
 fieldset {
     border-style: none;
 }
-
-input:focus, textarea:focus {
-    border: 2px solid yellow;
-}
-
-input:invalid, textarea:invalid, select:invalid {
-    border: 2px solid red;
-}
-
 input:valid, textarea:valid, select:valid {
     border: 2px solid green;
     outline: none;
 }
+/* The :placeholder-shown pseudo-class ensures that the red border only appears 
+when the user has entered invalid data, not when the field is empty */
+input:invalid:not(:placeholder-shown), textarea:invalid:not(:placeholder-shown), select:invalid {
+    border: 2px solid red;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid orangered;
+    outline: none
+}
 
 #submit {
-    background-color: cornflowerblue;
-    color:white;
+    background-color: silver;
+    color:black;
+    font-weight: bold;
+    border: none;
     border-radius: 7px;
     margin-bottom: 10px;
     box-shadow: none;
 }
 
 #submit:hover {
-    background-color: navy;
+    background-color: dimgray;
+    color: silver;
 
 }
 
 .radio-group input[type="radio"]:checked {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    background-color: aqua;
     border-color: red;
-    background-color: lightblue;
-    box-shadow: 0 0 5px lightblue;
+    background-color: green;
+    box-shadow: 0 0 5px orange;
+}
+    
+.radio-group input[type="radio"]:checked + label {
+  color: green; 
 }
 
-.radio-group:checked {
-    color: lightblue;
+input:first-of-type {
+    background-color: teal;
+    border-color: indianred;
 }
