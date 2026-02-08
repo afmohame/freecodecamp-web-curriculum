@@ -1,0 +1,27 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.color-box {
+    width: 90px;
+    height: 90px;
+    border-radius: 9px;
+    display:inline-block;    
+}
+.color1 {
+    background-color: #12aa45;
+    
+}
+.color2 {
+    background-color: rgb(180, 34, 89);
+    
+}
+.color3 {
+    background-color: goldenrod;
+}
+.color4 {
+    background-color: hsl(285, 78%, 45%);
+}
+.color5 {
+    background-color: rgb(34, 110, 122);
+}
